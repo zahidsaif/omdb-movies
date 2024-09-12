@@ -1,0 +1,29 @@
+.movie-details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.poster-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.poster-img {
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 0px) {
+    .minor-details-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-row-gap: 10%;
+        grid-column-gap: 10%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .minor-details-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
