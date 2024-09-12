@@ -11,13 +11,13 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-// Custom Components
-import MoviesList from "./pages/MoviesList.jsx";
-import MovieDetails from "./pages/MovieDetails.jsx";
-import ErrorPage from "./pages/ErrorPage.jsx";
-
 // Styles
 import './index.css'
+
+// Custom Components
+import ErrorPage from "./pages/ErrorPage.jsx";
+import MoviesList from "./pages/MoviesList.jsx";
+import MovieDetails from "./pages/MovieDetails.jsx";
 
 const router = createBrowserRouter([
     {
