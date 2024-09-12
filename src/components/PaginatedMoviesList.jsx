@@ -50,8 +50,9 @@ const PaginatedMoviesList = () => {
     return <>
         <Box className="movie-list-container">
             {completeData.map(rowData => <MovieCard key={rowData.imdbID} data={rowData}/>)}
-            {isLoading && <SimpleLoader/>}
         </Box>
+
+        {isLoading && <SimpleLoader/>}
 
         <Typography ref={intersectionRef} textAlign="center" width="100%" mt={2}>
             {!isLoading && !isEndOfList && "Load More"}
